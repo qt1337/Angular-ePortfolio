@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CodeSandbox';
+  title = 'Angular ePortfolio';
   particlesOptions = {
     background: {
       color: {
-        value: '#0d47a1'
+        value: '#2d3436'
       }
     },
     fpsLimit: 144,
@@ -19,11 +19,11 @@ export class AppComponent {
       events: {
         onClick: {
           enable: true,
-          mode: 'push'
+          mode: 'repulse'
         },
         onHover: {
           enable: true,
-          mode: 'repulse'
+          mode: 'slow'
         },
         resize: true
       },
@@ -77,7 +77,7 @@ export class AppComponent {
         value: 0.5
       },
       shape: {
-        type: 'circle'
+        type: 'square'
       },
       size: {
         random: true,
