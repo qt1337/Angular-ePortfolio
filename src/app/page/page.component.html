@@ -1,3 +1,13 @@
+
 The topic is: {{topic}}
+
+<div class="nav-container">
+  <nav class="navigation">
+    <a routerLink="/page/angular" [class.selected]="topic === 'angular'" routerLinkActive="active">Angular CLI</a>
+    <a routerLink="/page/requirements" [class.selected]="topic === 'requirements'" routerLinkActive="active">Requirements</a>
+    <a routerLink="/page/why" [class.selected]="topic === 'why'" routerLinkActive="active">Why Angular</a>
+    <a routerLink="/page/examples" [class.selected]="topic === 'examples'" routerLinkActive="active">Examples</a>
+  </nav>
+</div>
 
 <button (click)="goBack()">go back</button>

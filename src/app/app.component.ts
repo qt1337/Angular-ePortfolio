@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -87,4 +88,7 @@ export class AppComponent {
     },
     detectRetina: true
   };
+
+  constructor(public location: Location) {
+  }
 }

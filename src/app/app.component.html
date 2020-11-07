@@ -1,11 +1,6 @@
 <div class="content">
-  <div class="nav-container">
-    <nav class="navigation">
-      <a routerLink="/page/angular" routerLinkActive="active">Angular CLI</a>
-      <a routerLink="/page/requirements" routerLinkActive="active">Requirements</a>
-      <a routerLink="/page/why" routerLinkActive="active">Why Angular</a>
-      <a routerLink="/page/examples" routerLinkActive="active">Examples</a>
-    </nav>
+  <div class="center" *ngIf="location.path() == ''">
+    <a routerLink="/page/angular" routerLinkActive="active">Learn about Angular</a>
   </div>
   <router-outlet></router-outlet>
 </div>

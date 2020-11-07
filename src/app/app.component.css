@@ -23,17 +23,28 @@
 }
 
 a {
+  font-size: 69px;
   color: #2d3436;
   text-decoration: none;
   background: #dfe6e9;
+  border-style: solid;
   border-radius: 15px;
+  border-color: #2d3436;
+  border-width: 5px;
   padding: 5px;
   margin: 5px;
 }
 
-.nav-container {
-  width: 100vw;
-  bottom: 10px;
+a:hover {
+  color: #dfe6e9;
+  border-color: #dfe6e9;
+  background: #2d3436;
+}
+
+.center {
+  margin: 0;
   position: fixed;
+  width: 100vw;
   text-align: center;
+  top: 50%;
 }
