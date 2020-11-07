@@ -1,12 +1,9 @@
 
-The topic is: {{topic}}
+The topic is: {{selectedTopic.name}}
 
 <div class="nav-container">
-  <nav class="navigation">
-    <a routerLink="/page/angular" [class.selected]="topic === 'angular'" routerLinkActive="active">Angular CLI</a>
-    <a routerLink="/page/requirements" [class.selected]="topic === 'requirements'" routerLinkActive="active">Requirements</a>
-    <a routerLink="/page/why" [class.selected]="topic === 'why'" routerLinkActive="active">Why Angular</a>
-    <a routerLink="/page/examples" [class.selected]="topic === 'examples'" routerLinkActive="active">Examples</a>
+  <nav class="navigation" >
+    <a *ngFor="let topic of topics" routerLink="/page/{{topic.name}}" [class.selected]="topic === this.selectedTopic" routerLinkActive="active">{{topic.name.toUpperCase()}}</a>
   </nav>
 </div>
 
