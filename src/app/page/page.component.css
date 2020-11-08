@@ -17,14 +17,13 @@ button:disabled {
   cursor: auto;
 }
 
-
 a {
-  color: #2d3436;
+  color: #636e72;
   text-decoration: none;
   background: #dfe6e9;
   border-style: solid;
   border-radius: 15px;
-  border-color: #2d3436;
+  border-color: #636e72;
   border-width: 5px;
   padding: 5px;
   margin: 5px;
@@ -33,7 +32,7 @@ a {
 a.selected {
   color: #dfe6e9;
   border-color: #dfe6e9;
-  background: #2d3436;
+  background: #636e72;
 }
 
 .nav-container {
@@ -41,4 +40,36 @@ a.selected {
   bottom: 10px;
   position: fixed;
   text-align: center;
+}
+
+.left-container {
+  background: #dfe6e9;
+  width: 30vw;
+  height: 50vh;
+  left: 0;
+  margin: 10px 10px 10px 5vw;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #636e72;
+  border-width: 5px;
+  color: #636e72;
+  padding: 10px;
+  position: fixed;
+  top: 20vh;
+}
+
+.right-container {
+  background: #dfe6e9;
+  width: 30vw;
+  height: 50vh;
+  right: 0;
+  margin: 10px 5vw 10px 10px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #636e72;
+  border-width: 5px;
+  color: #636e72;
+  padding: 10px;
+  position: fixed;
+  top: 20vh;
 }

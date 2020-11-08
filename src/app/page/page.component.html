@@ -9,11 +9,17 @@
   </ul>
 </div>
 
+<div *ngIf="this.selectedTopic" class="right-container">
+  <ul>
+    <li *ngFor="let entry of selectedTopic.container_right">
+      {{entry.toUpperCase()}}</li>
+  </ul>
+</div>
+
 <div *ngIf="this.selectedTopic" class="nav-container">
   <nav class="navigation">
     <a *ngFor="let topic of topics" routerLink="/page/{{topic.name}}" [class.selected]="topic === this.selectedTopic"
        routerLinkActive="active">{{topic.name.toUpperCase()}}</a>
   </nav>
 </div>
-
 <button (click)="goBack()">go back</button>
