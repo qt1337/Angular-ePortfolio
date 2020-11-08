@@ -33,18 +33,21 @@ a {
   border-width: 5px;
   padding: 5px;
   margin: 5px;
+  transition: all 0.5s ease-out;
 }
 
 a:hover {
   color: #dfe6e9;
   border-color: #dfe6e9;
   background: #2d3436;
+  font-size: 138px;
 }
 
 .center {
-  margin: 0;
-  position: fixed;
   width: 100vw;
+  height: 100vw;
   text-align: center;
-  top: 50%;
+  margin: 0;
+  line-height: 100vh;
+  position: fixed;
 }
