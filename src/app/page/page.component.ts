@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {Location} from '@angular/common';
 import {Topic} from '../topic';
-import {TOPICS} from '../topics';
+import {TopicService} from '../topic.service';
 
 @Component({
   selector: 'app-page',
@@ -10,12 +10,13 @@ import {TOPICS} from '../topics';
   styleUrls: ['./page.component.css']
 })
 export class PageComponent implements OnInit {
-  topics: Topic[] = TOPICS;
+  topics: Topic[];
   public selectedTopic: Topic;
 
   constructor(
     private route: ActivatedRoute,
-    private location: Location
+    private location: Location,
+    private topicService: TopicService
   ) {
     route.params.subscribe(() => {
       this.getTopic();
@@ -25,7 +26,12 @@ export class PageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getTopics(): void {
+    this.topicService.getTopics().subscribe(topics => this.topics = topics);
+  }
+
   getTopic(): void {
+    this.getTopics();
     const topicName: string = this.route.snapshot.paramMap.get('topic');
     let topic: any;
     for (topic of this.topics) {

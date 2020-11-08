@@ -1,9 +1,18 @@
+<div *ngIf="this.selectedTopic" style="text-align: center; top: 50px; position: relative; "><h1
+  style="font-size: 69px"> {{selectedTopic.name.toUpperCase()}} </h1>
+</div>
 
-The topic is: {{selectedTopic.name}}
+<div *ngIf="this.selectedTopic" class="left-container">
+  <ul>
+    <li *ngFor="let entry of selectedTopic.container_left">
+      {{entry.toUpperCase()}}</li>
+  </ul>
+</div>
 
-<div class="nav-container">
-  <nav class="navigation" >
-    <a *ngFor="let topic of topics" routerLink="/page/{{topic.name}}" [class.selected]="topic === this.selectedTopic" routerLinkActive="active">{{topic.name.toUpperCase()}}</a>
+<div *ngIf="this.selectedTopic" class="nav-container">
+  <nav class="navigation">
+    <a *ngFor="let topic of topics" routerLink="/page/{{topic.name}}" [class.selected]="topic === this.selectedTopic"
+       routerLinkActive="active">{{topic.name.toUpperCase()}}</a>
   </nav>
 </div>
 
