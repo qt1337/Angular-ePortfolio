@@ -22,8 +22,8 @@
   z-index: 100;
 }
 
-a {
-  font-size: 69px;
+#big-url {
+  font-size: 300%;
   color: #2d3436;
   text-decoration: none;
   background: #dfe6e9;
@@ -36,11 +36,34 @@ a {
   transition: all 0.5s ease-out;
 }
 
-a:hover {
+#big-url:hover {
   color: #dfe6e9;
   border-color: #dfe6e9;
   background: #2d3436;
-  font-size: 138px;
+  font-size: 400%;
+}
+
+#github {
+  font-size: 85%;
+  color: #636e72;
+  background: #dfe6e9;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #636e72;
+  border-width: 5px;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: all 0.5s ease-out;
+}
+
+#github:hover {
+  color: #dfe6e9;
+  border-color: #dfe6e9;
+  background: #636e72;
 }
 
 .center {

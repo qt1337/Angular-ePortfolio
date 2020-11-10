@@ -2,14 +2,16 @@
   style="font-size: 69px"> {{selectedTopic.name.toUpperCase()}} </h1>
 </div>
 
-<div *ngIf="this.selectedTopic" class="left-container">
+<div *ngIf="this.selectedTopic.container_left_title" class="left-container" [class.full-container]="!this.selectedTopic.container_right_title">
+  <h2>{{this.selectedTopic.container_left_title}}</h2>
   <ul>
     <li *ngFor="let entry of selectedTopic.container_left">
       {{entry.toUpperCase()}}</li>
   </ul>
 </div>
 
-<div *ngIf="this.selectedTopic" class="right-container">
+<div *ngIf="this.selectedTopic.container_right_title" class="right-container" [class.full-container]="!this.selectedTopic.container_left_title">
+  <h2>{{this.selectedTopic.container_right_title}}</h2>
   <ul>
     <li *ngFor="let entry of selectedTopic.container_right">
       {{entry.toUpperCase()}}</li>
@@ -18,7 +20,7 @@
 
 <div *ngIf="this.selectedTopic" class="nav-container">
   <nav class="navigation">
-    <a *ngFor="let topic of topics" routerLink="/page/{{topic.name}}" [class.selected]="topic === this.selectedTopic"
+    <a *ngFor="let topic of topics" class="nav-button" routerLink="/page/{{topic.name}}" [class.selected]="topic === this.selectedTopic"
        routerLinkActive="active">{{topic.name.toUpperCase()}}</a>
   </nav>
 </div>

@@ -1,8 +1,9 @@
 <div class="content">
   <div class="center" *ngIf="location.path() == ''">
-    <a routerLink="/page/start" routerLinkActive="active">Learn about Angular</a>
+    <a id="big-url" routerLink="/page/start" routerLinkActive="active">Learn about Angular</a>
   </div>
   <router-outlet></router-outlet>
+  <a href="https://github.com/qt1337/Angular-ePortfolio" id="github">GitHub Repository</a>
 </div>
 
 <div class="background">

@@ -23,12 +23,23 @@ a.selected {
   text-align: center;
 }
 
+.nav-button:hover {
+  color: #dfe6e9;
+  border-color: #dfe6e9;
+  background: #636e72;
+}
+
+h2 {
+  font-size: 140%;
+  font-weight: bold;
+}
+
 .left-container {
   background: #dfe6e9;
-  width: 30vw;
+  width: 35vw;
   height: 50vh;
   left: 0;
-  margin: 10px 10px 10px 5vw;
+  margin: 10px 10px 10px 7.5vw;
   border-style: solid;
   border-radius: 15px;
   border-color: #636e72;
@@ -37,14 +48,15 @@ a.selected {
   padding: 10px;
   position: fixed;
   top: 20vh;
+  font-size: 140%;
 }
 
 .right-container {
   background: #dfe6e9;
-  width: 30vw;
+  width: 35vw;
   height: 50vh;
   right: 0;
-  margin: 10px 5vw 10px 10px;
+  margin: 10px 7.5vw 10px 10px;
   border-style: solid;
   border-radius: 15px;
   border-color: #636e72;
@@ -53,6 +65,7 @@ a.selected {
   padding: 10px;
   position: fixed;
   top: 20vh;
+  font-size: 140%;
 }
 
 #back {
@@ -93,4 +106,10 @@ a.selected {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+
+.full-container {
+  width: 60vw;
+  margin: 10px 10px 10px 20vw;
+  text-align: center;
 }

@@ -48,14 +48,24 @@ export class AppComponent {
     },
     particles: {
       color: {
-        value: '#ffffff'
+        value: '#dfe6e9',
+        animation: {
+          enable: true,
+          speed: 50,
+          sync: false
+        }
       },
       links: {
-        color: '#ffffff',
-        distance: 150,
+        color: '#dfe6e9',
+        distance: 137,
         enable: true,
         opacity: 0.5,
-        width: 1
+        width: 1,
+        animation: {
+          enable: true,
+          speed: 50,
+          sync: false
+        }
       },
       collisions: {
         enable: true
