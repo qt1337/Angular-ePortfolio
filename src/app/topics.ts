@@ -19,6 +19,14 @@ export const TOPICS: Topic[] = [
   },
   {
     id: 2,
+    name: 'typical angular app',
+    container_left: ['Database: MongoDB', 'App Server: Express.js', 'Server runtime environment: Node.js', 'Frontend: Angular CLI'],
+    container_left_title: 'From Backend to Frontend',
+    container_right: [''],
+    container_right_title: ''
+  },
+  {
+    id: 3,
     name: 'why angular?',
     container_left: ['Platform independent', 'High Performance', 'Component-based architecture', 'TypeScript'],
     container_left_title: 'PRO',
@@ -26,7 +34,7 @@ export const TOPICS: Topic[] = [
     container_right_title: 'CON'
   },
   {
-    id: 3,
+    id: 4,
     name: 'examples',
     container_left: ['Google Apps (Gmail and so on)', 'Microsoft Office', 'Deutsche Bank', 'PayPal'],
     container_left_title: 'Who uses Angular?',
@@ -34,7 +42,7 @@ export const TOPICS: Topic[] = [
     container_right_title: ''
   },
   {
-    id: 4,
+    id: 5,
     name: 'requirements',
     container_left: ['JavaScript', 'HTML', 'CSS'],
     container_left_title: 'What should you know?',
