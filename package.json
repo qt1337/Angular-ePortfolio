@@ -24,11 +24,11 @@
     "angular-cli": "^1.0.0-beta.28.3",
     "bootstrap": "^4.5.0",
     "i": "^0.3.6",
-    "ng-particles": "^2.1.10",
+    "ng-particles": "^2.1.11",
     "particles.ts": "0.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "tsparticles": "^1.18.10",
+    "tsparticles": "^1.18.11",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
@@ -37,7 +37,7 @@
     "@angular/compiler-cli": "~10.2.3",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
+    "@types/node": "^12.19.4",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
