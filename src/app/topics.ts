@@ -4,23 +4,23 @@ export const TOPICS: Topic[] = [
   {
     id: 0,
     name: 'start',
-    container_left: ['What is Angular CLI?', 'How is the structure of an angular app?', 'Why should you use Angular?', 'What do you need for Angular?', 'Who uses Angular?'],
+    container_left: ['What is Angular?', 'How is the structure of an Angular app?', 'Why should you use Angular?', 'What do you need for Angular?', 'Who uses Angular?'],
     container_left_title: 'Agenda',
     container_right: [''],
     container_right_title: ''
   },
   {
     id: 1,
-    name: 'angular cli',
+    name: 'angular',
     container_left: ['Frontend Web-Framework', 'written with TypeScript', 'Open-Source', 'not AngularJS'],
-    container_left_title: 'What is Angular CLI?',
+    container_left_title: 'What is Angular?',
     container_right: ['Maintainer: Google LLC', 'Developer: Google LLC & Community', 'Release: 2016', 'Current Version: 10.2.2'],
     container_right_title: 'Some Facts'
   },
   {
     id: 2,
     name: 'typical angular app',
-    container_left: ['Database: MongoDB', 'App Server: Express.js', 'Server runtime environment: Node.js', 'Frontend: Angular CLI'],
+    container_left: ['Database: MongoDB', 'App Server: Express.js', 'Server runtime environment: Node.js', 'Frontend: Angular'],
     container_left_title: 'Structure',
     container_right: [''],
     container_right_title: ''
