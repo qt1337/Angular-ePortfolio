@@ -15,3 +15,11 @@ The app will automatically reload if you change any of the source files. <br>
 3. If you want to launch the server run `ng serve --open` (`--open` to open the page automatically). <br>
 4. Now a demo app should have been opened. That's your first application written with Angular CLI <br>
 5. Go and check out this [tutorial](https://angular.io/tutorial) for more knowledge about Angular CLI. <br>
+
+## Sources
+
+- https://de.wikipedia.org/wiki/Angular
+- https://www.altexsoft.com/blog/engineering/the-good-and-the-bad-of-angular-development/
+- https://trio.dev/blog/companies-use-angular
+- https://www.cleveroad.com/blog/angular-vs-react
+- https://angular.io/tutorial/
